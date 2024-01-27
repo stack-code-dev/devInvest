@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+input {
+  border: none;
+
+  width: 100%;
+  
+  color: #000;
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 5.2rem 11.5rem;
+}
+
+#principal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 105rem;
+  margin: 0 auto;
+
+  padding: 0rem 2rem;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 6.8rem;  
+
+  margin-bottom: 1.85rem;
+
+  border-bottom: 1px solid #EEE;
+}
+
+.tab li {
+  display: flex;
+  justify-content: center;
+
+  width: 21.2rem;
+  padding-bottom: 3.15rem;
+  position: relative;
+  
+  color: #7D7D7D;
+  list-style: none;
+  font-size: 2rem;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: opacity .24s;
+}
+
+.tab li:hover {
+  opacity: .7;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+
+  width: 100%;
+
+  padding: 1rem 0px;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 49.1rem;
+
+  max-width: 49rem;
+
+  padding: 1rem 0;
+}
+
+.left-side h3 {
+  width: 100%;
+  color: #000;
+
+  font-size: 2rem;
+  font-weight: 700;
+
+  margin-top: 4.2rem;
+}
+
+.amount-inveted-title {
+  width: 100%;
+  max-width: 31.8rem;
+}
+
+.amount-invested {
+  display: flex;
+
+  margin-bottom: .4rem;
+
+  align-items: center;
+  gap: 1.5rem
+}
+
+.amount-invested span {
+  color: #000;
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+
+.input-amount {
+  width: 100%;
+  height: 4.8rem;
+}
+
+#moneyInput-fake {
+  display: flex;
+  max-width: 31rem;
+  width: 100%;
+  
+  letter-spacing: 0.15rem;
+  color: #fff;
+}
+
+.button-controllers {
+  display: flex;
+
+  gap: 2.4rem;
+}
+
+.button-controllers button {
+  transition: all .24s;
+}
+
+.button-controllers button:hover {
+  opacity: 0.6;
+}
+
+.time-invested {
+  display: flex;
+  gap: 1rem;
+
+  text-transform: capitalize;
+}
+
+.time-invested span {
+  color: #000;
+  
+  font-size: 4.2rem;
+  font-weight: 700;
+
+  margin-bottom: .8rem;
+}
+
+input[type=range] {
+  width: 100%;
+  margin: 1rem 0px 5.6rem 0px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px 2px #fff;
+  background: #fff;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #D9D9D9;
+  border-radius: 0rem;
+  height: 0.3rem;
+  cursor: pointer;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  margin-top: -7px; 
+  border-radius: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+.info-box {
+  display: flex;
+  align-items: flex-start;
+  
+  gap: .8rem;
+}
+
+.info-percentage {
+  display: flex;
+  flex-direction: column;
+}
+
+.percentInvestmentType {
+  font-size: 1rem;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 440px;
+
+  padding: 3.2rem;
+  border-radius: 1.6rem;
+  background: #F5F5F5;
+}
+
+.right-side-title {
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: .8rem;
+
+  color: #000;
+
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.result-invested {
+  color: #0038FF;
+  font-size: 3.6rem;
+  font-weight: 700;
+
+  overflow: auto;
+}
+
+.result-invested-legend {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.totals {
+  display: flex;
+  flex-direction: column;
+
+  margin: 4.8rem 0px 6.98rem 0px;
+  font-size: 10px;
+}
+
+.totals span {
+  font-weight: 300;
+}
+
+.totals strong {
+  font-weight: 500;
+}
+
+.totals span:nth-child(2) strong {
+  color: #0038FF;
+}
+
+@media(max-width: 980px) {
+  .header {
+    padding: 3.5rem;
+  }
+
+  .header figure {
+    margin: 0 auto;
+    width: fit-content;
+  }
+    
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media(max-width: 570px) {
+  .amount-inveted-title {
+    margin-top: 1rem !important;
+  }
+
+  .left-side h3 {
+    font-size: 1.5rem;
+  }
+
+  .left-side span {
+    font-size: 3rem;
+  }
+
+  .amount-invested {
+    font-size: 3rem;
+  }
+
+  .amount-invested span {
+    max-width: 30vw;
+  }
+
+  #moneyInput {
+    font-size: 3rem;
+  }
+
+  #moneyInput-fake {
+    max-width: 35vw;
+  }
+
+  .input-amount {
+    height: 34px;
+  }
+
+  .button-controllers button img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .button-controllers {
+    gap: 1.3rem;
+  }
+
+  .result-invested {
+    font-size: 3rem;
+  }
+
+  .right-side-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media(max-width: 430px) {
+  #moneyInput {
+    font-size: 2.5rem;
+  }
+
+  .amount-invested {
+    gap: 0.8rem
+  }
+
+  .amount-invested span {
+    font-size: 2.5rem;
+  }
+
+  .time-invested {
+    gap: 0.8rem
+  }
+  
+  .time-invested span {
+    font-size: 2.5rem;
+  }
+
+  .result-invested {
+    font-size: 2.5rem;
+  }
+}
+
+
+.active-tab {
+  border-bottom: 3px solid #0038FF;
+}

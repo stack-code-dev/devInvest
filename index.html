@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="styles.css">
+  <title>DevInvest</title>
+
+</head>
+<body>
+  <div id="container">
+    <header class="header">
+      <figure>
+        <img src="./assets/devinvest-logo.svg" alt="devinvest-logo">
+      </figure>
+    </header>
+
+    <main id="principal">
+      <ul class="tab">
+        <li id="tab-CDB" class="active-tab" onclick="changeTab('CDB')" >
+          CBD e LC
+        </li>
+        <li id="tab-LCI" class="" onclick="changeTab('LCI')" >
+          LCI e LCA
+        </li>
+      </ul>
+
+      <section class="content">
+        <article class="left-side">
+          <h3 class="amount-inveted-title">Para começar, qual valor você gostaria de investir?</h3>
+        
+          <div class="amount-invested">
+            <span>R$</span>
+
+            <div class="input-amount">
+              <input id="moneyInput" type="text" placeholder="0,00">
+              <span id="moneyInput-fake"></span>
+            </div>
+            
+            <div class="button-controllers">
+              <button onclick="hanldeControllersInput('sub')">
+                <img src="./assets/sub-button.svg" alt="sub-button">
+              </button>
+              <button onclick="hanldeControllersInput('sum')">
+                <img src="./assets/add-button.svg" alt="add-button">
+              </button>
+            </div>  
+          </div>
+
+          <h3>Quanto tempo deixaria seu dinheiro investido?</h3>
+
+          <div class="time-invested">
+            <span></span>
+            <span class="month-label">Meses</span>
+          </div>
+
+          <input id="rangeInput" type="range" min="1" max="96" value="24" />
+
+          <div class="info-box">
+            <img src="./assets/info-icon.svg" alt="info-icon">
+            <div class="info-percentage">
+              <p>- Porcentagem de rentabilidade da Poupança: 0,50% a.m.</p>
+              <p>- Porcentagem de rentabilidade do 
+                <small class="percentInvestmentType">CDB e LC: 127% do CDI.</small>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="right-side">
+          <div class="right-side-title">
+            <span>Em</span>
+            <div>
+              <strong class="month-value">120</strong>
+              <strong class="month-label">meses</strong>
+            </div>
+            <span>você teria:</span>
+          </div>
+
+          <span class="result-invested">316.565,47</span>
+          <small class="result-invested-legend">Valor líquido com impostos descontados</small>
+
+          <div class="totals">
+            <span>Total investido: <strong class="totals-invested">140.000,00</strong></span>
+            <span>Rendimento bruto: <strong class="totals-gross-income">170.000,00</strong></span>
+            <span>Na poupança: <strong class="totals-savings">6.000,00</strong></span>
+          </div>
+
+          <div class="investment-chart">
+            <canvas id="myChart"></canvas>
+          </div>
+            
+        </article>
+      </section>
+    </main>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
