@@ -1,4 +1,4 @@
-<div>
+<div style="width: 100vw">
 <p align="center">
   <img alt="My-wallet" src="./assets/devinvest-logo.svg" width="160px">
 </p>
@@ -55,14 +55,19 @@ Lembrando que é necessário ter uma conta no figma para acessar o projeto. [Fig
     style="
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
       "
   >
       <img 
         style="
-          margin: 15px auto; width: 200px" alt="img1-devinvest"src="./layout/mobile.png" 
+          margin: 15px;
+          width: 300px
+          " alt="img1-devinvest"src="./layout/mobile.png" 
       />
       <img 
-      style="margin: 15px" alt="img2-devinvest" src="./layout/desktop.png" />
+      style="margin: 15px; width: 800px" alt="img2-devinvest" src="./layout/desktop.png" />
   </div>
 
 <p align="center">Made with ❤ by StackCode 🐺</p>
