@@ -55,10 +55,14 @@ Lembrando que é necessário ter uma conta no figma para acessar o projeto. [Fig
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center"
+      justify-content: center;
+      width: 100%"
   >
-      <img   style="margin: 15px; width: 200px" alt="img1-devinvest" src="./layout/mobile.png" />
-      <img   style="margin: 15px" alt="img2-devinvest" src="./layout/desktop.png" />
+      <img 
+        style="
+          margin: 15px; width: 200px" alt="img1-devinvest"src="./layout/mobile.png" />
+      <img 
+      style="margin: 15px" alt="img2-devinvest" src="./layout/desktop.png" />
   </div>
 
 <p align="center">Made with ❤ by StackCode 🐺</p>
