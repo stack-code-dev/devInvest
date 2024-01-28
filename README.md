@@ -1,12 +1,3 @@
-<!-- <div style="background: red; height: 100vh">
-  <div style="display: flex; justify-content: center; background: blue">
-  <img src="./assets/devinvest-logo.svg"
-  width="300px" alt="devInvest-icon"/>
-  </div>
-
-
-</div> -->
-
 <p align="center">
   <img alt="My-wallet" src="./assets/devinvest-logo.svg" width="160px">
 </p>
@@ -16,12 +7,11 @@
 </h4>
 
 <p align="center">
-  <a href="#test_tube-technologies">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-Getting-started">Início</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#desktop_computer-Project">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#bookmark-Layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#clapper-Demonstration">Demonstration</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#sunny-result">Result</a>
+  <a href="#test_tube-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-início">Início</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#desktop_computer-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#bookmark-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#sunny-resultado">Resultado</a>
 </p>
 
 ## :test_tube: Tecnologias
@@ -54,12 +44,6 @@ Você poderá ver o layout através do link abaixo:
 
 Lembrando que é necessário ter uma conta no figma para acessar o projeto. [Figma](http://figma.com/)
 
-## :clapper: Demonstracao
-
-  <div style="display: flex; flex-direction: column; align-items: center; margin: 15px 0px">
-    <img alt="devinvest-movie" src="./layout/video/devInvest-movie.mov" width= "100%"/>    
-  </div>
-
 ---
 
 ## :sunny: Resultado
@@ -70,7 +54,8 @@ Lembrando que é necessário ter uma conta no figma para acessar o projeto. [Fig
     style="
       display: flex;
       flex-direction: column;
-      align-items: center"
+      align-items: center;
+      justify-content: center"
   >
       <img   style="margin: 15px 0px" alt="img2-devinvest" src="./layout/print2.png" />
       <img   style="margin: 15px; width: 200px" alt="img1-devinvest" src="./layout/print1.png" />
