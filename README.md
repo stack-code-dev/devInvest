@@ -25,7 +25,7 @@ Esse projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ## :rocket: Início
 
-Para clonar essa aplicação, você precisa do [Git](https://git-scm.com), [Node.js v18.17.1][nodejs] ou mairo + [Yarn v1.22.19][yarn] ou maior instalado no seu computador.
+Para clonar essa aplicação, você precisa do [Git](https://git-scm.com), [Node.js v18.17.1][nodejs] ou maior + [Yarn v1.22.19][yarn] ou maior instalado no seu computador.
 
 No seu terminal clone esse projeto e acesse a pasta:
 
@@ -71,3 +71,5 @@ Lembrando que é necessário ter uma conta no figma para acessar o projeto. [Fig
   </div>
 
 <p align="center">Made with ❤ by StackCode 🐺</p>
+
+</div>
